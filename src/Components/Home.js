@@ -43,8 +43,8 @@ const Home = () => {
 
         </div>
         <Tilt>
-          <img className='Avatar' src={Avatar} alt="" />
-        </Tilt>
+  <img className='Avatar' src={Avatar} alt="" style={{ width: '350px', height: '450px' }} />
+</Tilt>
       </div>
     </div>
   )
