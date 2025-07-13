@@ -66,7 +66,7 @@ const socialLinks = [
   { href: "https://github.com/piyush1519", icon: <FaGithub /> },
   { href: "https://www.linkedin.com/in/piyuishnimbalkar19/", icon: <FaLinkedin /> },
   { href: "mailto:piyushnimbalkar15@gmail.com", icon: <GrMail /> },
-  { href: "https://leetcode.com/piyush1519/", icon: <SiLeetcode /> },
+  { href: "https://leetcode.com/u/UR2GfQ7Pbt/", icon: <SiLeetcode /> },
 ];
 
 // ✅ Transparent, frosted-glass style
