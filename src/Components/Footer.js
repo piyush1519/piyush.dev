@@ -4,7 +4,6 @@ import { GrMail } from "react-icons/gr";
 import { SiLeetcode } from "react-icons/si";
 import { FaArrowUp } from "react-icons/fa";
 
-
 const Footer = () => {
   useEffect(() => {
     const scrollBtn = document.querySelector(".scrollToTop");
@@ -41,21 +40,19 @@ const Footer = () => {
         </div>
 
         <button
-  onClick={scrollToTop}
-  style={buttonStyle}
-  className="scrollToTop"
-  onMouseEnter={e => {
-    Object.assign(e.currentTarget.style, buttonHoverStyle);
-    e.currentTarget.style.color = '#ffffff';
-  }}
-  onMouseLeave={e => {
-    Object.assign(e.currentTarget.style, buttonStyle);
-  }}
->
-  <FaArrowUp size={18} />
-</button>
-
-
+          onClick={scrollToTop}
+          style={buttonStyle}
+          className="scrollToTop"
+          onMouseEnter={e => {
+            Object.assign(e.currentTarget.style, buttonHoverStyle);
+            e.currentTarget.style.color = '#ffffff';
+          }}
+          onMouseLeave={e => {
+            Object.assign(e.currentTarget.style, buttonStyle);
+          }}
+        >
+          <FaArrowUp size={18} />
+        </button>
       </footer>
     </>
   );
@@ -66,12 +63,12 @@ const socialLinks = [
   { href: "https://github.com/piyush1519", icon: <FaGithub /> },
   { href: "https://www.linkedin.com/in/piyuishnimbalkar19/", icon: <FaLinkedin /> },
   { href: "mailto:piyushnimbalkar15@gmail.com", icon: <GrMail /> },
-  { href: "https://leetcode.com/u/UR2GfQ7Pbt/", icon: <SiLeetcode /> },
+  { href: "https://leetcode.com/piyush1519/", icon: <SiLeetcode /> },
 ];
 
-// ✅ Transparent, frosted-glass style
+// 🎨 Base color palette: #62dafc
 const footerStyle = {
-  backgroundColor: 'transparent', // More transparent
+  backgroundColor: 'transparent',
   backdropFilter: 'blur(10px)',
   padding: '20px 10px',
   color: '#fff',
@@ -82,7 +79,7 @@ const footerStyle = {
 const textStyle = {
   marginBottom: '12px',
   fontSize: '0.95rem',
-  color: '#bbbbbb',
+  color: '#b0dcf3',
 };
 
 const iconContainer = {
@@ -93,29 +90,27 @@ const iconContainer = {
   flexWrap: 'wrap',
 };
 
-// 🔘 Glass style with more transparency
 const iconBox = {
   width: '44px',
   height: '44px',
   borderRadius: '50%',
-  backgroundColor: 'rgba(255, 255, 255, 0.04)', // Very light frosted
+  backgroundColor: 'rgba(255, 255, 255, 0.03)',
   backdropFilter: 'blur(6px)',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  color: '#bbbbbb',
+  color: '#b0dcf3',
   fontSize: '1.2rem',
   transition: 'all 0.3s ease',
   boxShadow: '0 0 10px transparent',
 };
 
 const iconHover = {
-  backgroundColor: 'rgba(255, 255, 255, 0.08)',
-  color: '#fff',
-  boxShadow: '0 0 12px #9067C6, 0 0 18px #9067C6',
-  transform: 'scale(1.05)',
+  backgroundColor: 'rgba(98, 218, 252, 0.1)',
+  color: '#62dafc',
+  boxShadow: '0 0 12px #62dafc, 0 0 20px #62dafc',
+  transform: 'scale(1.08)',
 };
-
 
 const buttonStyle = {
   position: 'fixed',
@@ -135,13 +130,12 @@ const buttonStyle = {
   transition: 'all 0.3s ease',
   zIndex: 999,
 };
+
 const buttonHoverStyle = {
-  backgroundColor: 'rgba(255, 255, 255, 0.12)',
-  boxShadow: '0 0 10px #9067C6, 0 0 18px #9067C6',
-  transform: 'scale(1.05)',
-  color: '#ffffff', // ✅ Ensures arrow icon stays visible
+  backgroundColor: 'rgba(98, 218, 252, 0.15)',
+  boxShadow: '0 0 12px #62dafc, 0 0 24px #62dafc',
+  transform: 'scale(1.08)',
+  color: '#ffffff',
 };
-
-
 
 export default Footer;
