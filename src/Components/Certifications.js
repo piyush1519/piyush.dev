@@ -24,7 +24,7 @@ import cert16 from '../CRT/WCE VISION.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const certificates = [
-     {
+  {
     title: "Software Engineer Intern – HackerRank",
     desc: "Completed hands-on tasks simulating a software engineering internship.",
     file: cert14,
@@ -34,7 +34,7 @@ const certificates = [
     desc: "Completed practical tasks in IAM, solution design, and platform integration.",
     file: cert2,
   },
- {
+  {
     title: "Frontend Developer – React HackerRank",
     desc: "Completed tasks involving React components, APIs, and UI enhancement.",
     file: cert5,
@@ -45,10 +45,10 @@ const certificates = [
     file: cert3,
   },
   {
-  title: "Finalist – WCE Hackathon 2025",
-  desc: "Finalist in 24-hour national hackathon organized by WCE ACM Student Chapter.",
-  file: cert16,
-},
+    title: "Finalist – WCE Hackathon 2025",
+    desc: "Finalist in 24-hour national hackathon organized by WCE ACM Student Chapter.",
+    file: cert16,
+  },
   {
     title: "Tech Consulting Job Simulation – Deloitte (Forage)",
     desc: "Explored client engagement, tech strategy, and problem-solving as a consultant.",
@@ -60,10 +60,10 @@ const certificates = [
     file: cert10,
   },
   {
-  title: "HackOverflow 3.0 – Pillai HOC",
-  desc: "Participated in the 3-day national-level hackathon held at PHCET, Rasayani.",
-  file: cert15,
-},
+    title: "HackOverflow 3.0 – Pillai HOC",
+    desc: "Participated in the 3-day national-level hackathon held at PHCET, Rasayani.",
+    file: cert15,
+  },
   {
     title: "JavaScript Basics – Code360",
     desc: "Covered JS fundamentals: variables, operators, data types, and functions.",
@@ -104,29 +104,31 @@ const certificates = [
     desc: "Presented 'Line Follower Robot using PID' at Vidyalankar Institute of Technology.",
     file: cert1,
   },
- 
 ];
-
 
 const previewWidth = 240;
 const previewHeight = 180;
 
 const buttonStyle = {
-  padding: '8px 16px',
-  fontSize: '0.9rem',
-  border: 'none',
+  padding: '6px 12px',
+  fontSize: '0.85rem',
   borderRadius: '6px',
   cursor: 'pointer',
-  backgroundColor: '#3c2444',
-  color: '#fff',
+  backgroundColor: '#3BB1E0', // Based on #62DAFC tone
+  color: '#FFFFFF',
+  border: 'none',
   display: 'flex',
   alignItems: 'center',
-  gap: '6px',
-  transition: 'background-color 0.2s ease-in-out',
+  justifyContent: 'center',
+  marginTop: '12px',
+  gap: '5px',
+  textDecoration: 'none',
+  transition: 'all 0.3s ease-in-out',
 };
 
 const buttonHover = {
-  backgroundColor: '#2c1b34',
+  backgroundColor: '#B5EFFF',
+  color: '#114E60',
 };
 
 const CertificationBox = ({ title, desc, file }) => {
@@ -167,14 +169,15 @@ const CertificationBox = ({ title, desc, file }) => {
         {desc}
       </p>
 
-      {/* Buttons Centered */}
+      {/* Buttons */}
       <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', marginTop: '12px' }}>
         <a
           href={file}
           target="_blank"
           rel="noreferrer"
-          onMouseEnter={() => setHovered({ ...hovered, view: true })}
-          onMouseLeave={() => setHovered({ ...hovered, view: false })}
+          style={{ textDecoration: 'none' }}
+          onMouseEnter={() => setHovered(prev => ({ ...prev, view: true }))}
+          onMouseLeave={() => setHovered(prev => ({ ...prev, view: false }))}
         >
           <button style={{ ...buttonStyle, ...(hovered.view ? buttonHover : {}) }}>
             <CgFileDocument /> View
@@ -183,8 +186,9 @@ const CertificationBox = ({ title, desc, file }) => {
         <a
           href={file}
           download
-          onMouseEnter={() => setHovered({ ...hovered, download: true })}
-          onMouseLeave={() => setHovered({ ...hovered, download: false })}
+          style={{ textDecoration: 'none' }}
+          onMouseEnter={() => setHovered(prev => ({ ...prev, download: true }))}
+          onMouseLeave={() => setHovered(prev => ({ ...prev, download: false }))}
         >
           <button style={{ ...buttonStyle, ...(hovered.download ? buttonHover : {}) }}>
             <FaDownload /> Download
