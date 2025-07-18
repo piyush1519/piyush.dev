@@ -2,7 +2,7 @@
 <p align="center">
   A clean and modern MERN stack portfolio showcasing my work in web development, AI/ML, and cybersecurity.
   <br/>
-  <a href="[https://piyush.dev/](https://piyush-dev.vercel.app/)" target="_blank"><strong>🌐 View Live Portfolio »</strong></a>
+  <a href="https://piyush-dev.vercel.app/" target="_blank"><strong>🌐 View Live Portfolio »</strong></a>
 </p>
 
 <p align="center">
