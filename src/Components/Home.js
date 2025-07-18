@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from  "lottie-react";
-import SpaceBoy from "../LottieFiles/SpaceBoy.json";
+import SpaceBoy from "../LottieFiles/coding.json";
 import Typed from "./Typed.js";
 import Tilt from 'react-parallax-tilt';
 import Avatar from '../images/Avatar.jpg';
@@ -42,9 +42,10 @@ const Home = () => {
 </p>
 
         </div>
-        <Tilt>
+       <Tilt>
   <img className='Avatar' src={Avatar} alt="" style={{ width: '350px', height: '450px' }} />
 </Tilt>
+
       </div>
     </div>
   )
