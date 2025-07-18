@@ -15,11 +15,11 @@ const About = () => {
   I'm a <b>MERN stack web developer</b> and a third-year college student pursuing <b>BTech in Computer Engineering</b> at VIT, Mumbai.<br/><br/>
 
   I’ve interned at <b>MetaCraftLab</b> and <b>Paarvedan Foundation</b>, working on backend systems, ERP platforms, and web interfaces.
-  I’m especially interested in <b>AI/ML</b>, <b>cybersecurity</b> and <b>full-stack development</b>, and have been a finalist in multiple national-level hackathons.<br/><br/>
+  I’m especially interested in <b>AI/ML</b>, <b>cybersecurity</b>, and <b>full-stack development</b>, and have been a finalist in multiple national-level hackathons.<br/><br/>
 
   I love building meaningful tech — from salary prediction models to blockchain-based supply chains. 
   You can explore some of my work in the Projects section or visit my 
-   <a href="https://github.com/piyush1519" target="_blank"> GitHub</a>.<br/><br/>
+   <a href="https://github.com/piyush1519" target="_blank"rel="noreferrer" > GitHub</a>.<br/><br/>
 
   Outside of coding, I’m an avid <b>trekker</b> and love <b>visiting historic forts and places</b>. 
   Exploring nature and history keeps me grounded and inspired.<br/><br/>
