@@ -1,10 +1,10 @@
 import React from 'react'; 
 import { FaReact, FaPython, FaGitAlt, FaGithub, FaNpm, FaFigma } from "react-icons/fa";
 import { DiNodejs, DiJavascript1 } from "react-icons/di";
-import { SiExpress, SiMongodb, SiPostman, SiVercel, SiSecurityscorecard } from "react-icons/si";
-import { GiArtificialIntelligence, FaBrain } from "react-icons/fa";  // AI/ML icon
+import { SiExpress, SiMongodb, SiPostman, SiVercel} from "react-icons/si";
+import {  FaBrain } from "react-icons/fa";  // AI/ML icon
 import { MdOutlineSecurity } from "react-icons/md"; // Cybersecurity icon
-import { HiOutlineChip } from "react-icons/hi";
+// import { HiOutlineChip } from "react-icons/hi";
 import { BsCpu } from "react-icons/bs";
 const Skills = ({ skill }) => {
   const icon = {
