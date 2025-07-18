@@ -59,7 +59,7 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
             <span
               onClick={() => setIsExpanded(!isExpanded)}
               style={{
-                background: 'linear-gradient(to right, #421f45 0%, #77848a 100%)',
+                background: 'linear-gradient(to right, #39aacaff 0%, #77848a 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 cursor: 'pointer',
