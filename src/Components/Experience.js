@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FaDownload } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 
 // Logo imports
@@ -54,7 +53,7 @@ const buttonStyle = {
   fontSize: '0.85rem',
   borderRadius: '6px',
   cursor: 'pointer',
-  backgroundColor: '#442046',
+  backgroundColor: '#238eb5',
   color: '#fff',
   border: 'none',
   display: 'flex',
@@ -62,11 +61,14 @@ const buttonStyle = {
   justifyContent: 'center',
   marginTop: '12px',
   gap: '5px',
+  textDecoration: 'none',
   transition: 'all 0.2s ease-in-out',
 };
 
 const buttonHover = {
-  backgroundColor: '#351337',
+  transition: "all 0.5s",
+  backgroundColor: "#88d7e7",
+  color: "#185d76"
 };
 
 const ExperienceBox = ({ company, role, duration, desc, logo, letter }) => {
@@ -111,7 +113,7 @@ const ExperienceBox = ({ company, role, duration, desc, logo, letter }) => {
 
       {/* Info */}
       <h3 style={{ textAlign: 'center', fontWeight: '600', color: '#ffffff' }}>{company}</h3>
-      <p style={{ textAlign: 'center', fontSize: '0.9rem', color: '#cba4de', margin: '4px 0' }}>{role}</p>
+      <p style={{ textAlign: 'center', fontSize: '0.9rem', color: '#3295cbff', margin: '4px 0' }}>{role}</p>
       <p style={{ textAlign: 'center', fontSize: '0.8rem', color: '#aaaaaa', marginBottom: '8px' }}>{duration}</p>
       <p style={{ fontSize: '0.85rem', color: '#dddddd', textAlign: 'center', padding: '0 6px' }}>{desc}</p>
 
@@ -128,6 +130,7 @@ const ExperienceBox = ({ company, role, duration, desc, logo, letter }) => {
           href={letter}
           target="_blank"
           rel="noreferrer"
+          style={{ textDecoration: 'none' }}
           onMouseEnter={() => setHovered({ view: true })}
           onMouseLeave={() => setHovered({ view: false })}
         >
@@ -170,7 +173,7 @@ const Experience = () => {
         ))}
       </div>
 
-      {/* Responsive Media Queries (via style tag) */}
+      {/* Responsive Media Queries */}
       <style>
         {`
           @media (max-width: 992px) {
